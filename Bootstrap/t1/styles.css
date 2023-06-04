@@ -1,0 +1,22 @@
+.row{
+    text-align: center;
+    background-color: green;
+    border: 2px solid red;
+    color:aliceblue;
+}
+
+.col-1{
+    border-right:1px solid brown;
+}
+
+.col-4{
+    border-right:1px solid brown;
+}
+
+.col-8{
+    border-right:1px solid brown;
+}
+
+.col-12{
+    border-right:1px solid brown;
+}

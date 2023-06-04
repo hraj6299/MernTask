@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Frame Layout</title>
+    <style>
+        html, body {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            display: flex;
+            height: 100%;
+        }
+
+        .top {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .small-frame {
+            flex: 1;
+            border: 1px solid black;
+        }
+
+        .bottom {
+            flex: 2;
+            display: flex;
+        }
+
+        .side-frame {
+            flex: 1;
+            border: 1px solid black;
+        }
+
+        .middle-frame {
+            flex: 2;
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="top">
+            <div class="small-frame">
+                <iframe src="task2.html" style="height: 350px ; width: 500px; "></iframe>
+            </div>
+            <div class="small-frame"><iframe src="task1.html" style="height: 350px ; width: 500px; "></iframe></div>
+        </div>
+        <div class="bottom">
+            <div class="side-frame"><iframe src="task7.html" style="height: 650px ; width: 500px;"></iframe></div>
+            <div class="middle-frame"><iframe src="task7.html" style="height: 650px ; width: 500px;"></iframe></div>
+        </div>
+    </div>
+</body>
+</html>

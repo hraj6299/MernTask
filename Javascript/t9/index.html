@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Animation Control</title>
+  <style>
+    .box {
+      width: 100px;
+      height: 100px;
+      background-color: red;
+      position: absolute;
+    }
+  </style>
+</head>
+<body>
+  <div class="box"></div>
+
+  <script>
+    var box = document.querySelector('.box');
+    var position = 0;
+    var direction = 1;
+
+    function animate() {
+      // Update the position
+      position += direction;
+      
+      // Apply the updated position to the element
+      box.style.left = position + 'px';
+      
+      // Reverse direction if the box reaches the window edge
+      if (position >= window.innerWidth - box.clientWidth || position <= 0) {
+        direction *= -1;
+      }
+
+      // Request the next animation frame
+      requestAnimationFrame(animate);
+    }
+
+    // Start the animation
+    animate();
+  </script>
+</body>
+</html>

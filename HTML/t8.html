@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Registration Form</title>
+
+    <style>
+        label{
+            font-weight: bold;
+        }
+        
+        table {
+            border-collapse: collapse;
+        }
+        
+        th, td {
+            width: 140px;
+            border: 1px solid black;
+        }
+        
+    </style>
+</head>
+<body>
+    <h1>Registration Form</h1>
+    <form>
+        <table>
+            <tr>
+                <th><label for="first-name">First Name:</label></th>
+                <td><input style="width: 250px;" type="text" id="first-name" name="first-name" required></td>
+            </tr>
+            <tr>
+                <th><label for="last-name">Last Name:</label></th>
+                <td><input style="width: 250px;" type="text" id="last-name" name="last-name" required></td>
+            </tr>
+            <tr>
+                <th><label for="email">Email Address:</label></th>
+                <td><input style="width: 250px;" type="email" id="email" name="email" required></td>
+            </tr>
+            <tr>
+                <th>Gender:</th>
+                <td>
+                    <input type="radio" id="male" name="gender" value="male" required>
+                    <label for="male">Male</label>
+                    <input type="radio" id="female" name="gender" value="female" required>
+                    <label for="female">Female</label>
+                </td>
+            </tr>
+            <tr>
+                <th><label for="age">Age:</label></th>
+                <td><input style="width: 250px;" style="width: 250px;" type="number" id="age" name="age" required></td>
+            </tr>
+            <tr>
+                <th><label for="phone">Phone Number:</label></th>
+                <td><input style="width: 250px;" type="tel" id="phone" name="phone" required></td>
+            </tr>
+            <tr>
+                <th><label for="address">Address:</label></th>
+                <td><textarea id="address" style="width: 250px;" name="address" rows="4" cols="30" required></textarea></td>
+            </tr>
+            <tr>
+                <th><label for="state">State:</label></th>
+                <td><input style="width: 250px;" type="text" id="state" name="state" required></td>
+            </tr>
+            <tr>
+                <th><label for="country">Country:</label></th>
+                <td>
+                    <select id="country" name="country" required>
+                        <option value="">Select a country</option>
+                        <option value="Country 1">Country 1</option>
+                        <option value="Country 2">Country 2</option>
+                        <option value="Country 3">Country 3</option>
+                        <!-- Add more countries up to 10 in a random order -->
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <th><label for="languages">Languages Known:</label></th>
+                <td>
+                    <input type="checkbox" id="english" name="languages" value="English">
+                    <label for="english">English</label>
+                    <br>
+                    <input type="checkbox" id="spanish" name="languages" value="Spanish">
+                    <label for="spanish">Spanish</label>
+                    <br>
+                    <input type="checkbox" id="french" name="languages" value="French">
+                    <label for="french">French</label>
+                    <!-- Add more language options as needed -->
+                </td>
+            </tr>
+            
+        </table>
+        <br>
+        <button type="submit">Register</button>
+    </form>
+</body>
+</html>

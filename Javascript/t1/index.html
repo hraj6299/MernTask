@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Task-1</title>
+</head>
+<body>
+
+    <button type="button" onclick="showDate()">Show Date</button>
+    <p id="DateDisplay"></p>
+  
+    <button type="button" onclick="showTime()">Show Time</button>
+    <p id="TimeDisplay"></p>
+
+  
+
+  <script>
+
+    function showDate() {
+      var currentDate = new Date();
+      document.getElementById("DateDisplay").innerHTML = new Date().getDate() + "/" + new Intl.DateTimeFormat('en-US', { month: 'long' }).format(new Date()) + "/" + new Date().getFullYear();
+     
+    }
+    function showTime() {
+      var currentDate = new Date();
+      document.getElementById("TimeDisplay").innerHTML=Date();
+     
+    }
+
+    
+  </script>
+</body>
+</html>

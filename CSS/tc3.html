@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task-3</title>
+    <style>
+    .tab{
+        text-align: center;
+    }
+    h2{
+        margin-top: 40px;
+        text-align: center;
+
+    }
+    .horizontal {
+        list-style-type: none;
+        padding: 0;
+        overflow: hidden;
+        background-color: #ccc2c2;
+        width: 20%;
+        border:2px solid;
+        border-color: black;
+        position: relative;
+        }
+
+        .line{
+        float: left;
+        border-right:1px solid #1c13c8;
+        }
+
+        li:last-child {
+        border-right: none;
+        }
+
+        li a {
+        display: block;
+        color:rgb(8, 110, 244);
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        }
+
+        li a:hover:not(.active) {
+        background-color: #111;
+        }
+
+        .active {
+        background-color:#423333;
+        }
+        .horiz{
+            position: relative;
+            left:40px;
+            margin-top: 20px;
+        }
+        .vertical{
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        background-color: #f1f1f1;
+        border: 1px solid #5d1b1b;
+        width: 15%;
+        border:2px solid;
+        border-color: black;
+        
+        }
+
+        .line1 {
+        text-align: center;
+        }
+
+        li a.active1 {
+        background-color: rgb(102, 73, 18);
+        color: white;
+        }
+        .vert{
+            position: relative;
+            left:40px;
+            margin-top: 20px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="task3">
+        <h1>Task-3</h1>
+        <div>
+            <h3 class="horiz">Horizontal Nav Bar</h3>
+            <ul class="horizontal">
+                <li class="line"><a class="active" href="#home">Home</a></li>
+                <li class="line"><a href="#java">Java</a></li>
+                <li class="line"><a href="#html">HTML</a></li>
+                <li class="line"><a href="#css">CSS</a></li>
+              </ul>
+            
+        </div>
+        <div >
+            <h3 class="vert">Vertical Nav Bar</h3>
+            <ul class="vertical">
+                <li class="line1"><a class="active1" href="#home">Home</a></li>
+                <li class="line1"><a href="#java">Java</a></li>
+                <li class="line1"><a href="#css">CSS</a></li>
+                <li class="line1"><a href="#html">HTML</a></li>
+                <li class="line1"><a href="#bootstrap">Bootstrap</a></li>
+              </ul>
+        </div>
+    </div>
+    
+</body>
+</html>
